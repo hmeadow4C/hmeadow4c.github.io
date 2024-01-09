@@ -1,0 +1,294 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>454 Bio – Library preparation</title>
+    <link>/docs/protocols/library-prep/</link>
+    <description>Recent content in Library preparation on 454 Bio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 29 Dec 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="/docs/protocols/library-prep/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Library preparation: synthetic library</title>
+      <link>/docs/protocols/library-prep/synthetic/</link>
+      <pubDate>Fri, 29 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/protocols/library-prep/synthetic/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This protocol details methods to prepare circular single stranded DNA library using 5’ phosphorylated synthetic linear ssDNA as starting material (synthetic library). Oligonucleotides can be ordered from IDT, resuspended, and used directly in CircLigase reaction to produce synthetic library.&lt;/p&gt;
+&lt;p&gt;Library insert size is critical to success using the TIRF Transformer system and rolling circle surface amplification (RCA). Template copy number in sequencing clusters is highly dependent on insert length. Longer insert translates to lower copy number in RCA generated sequencing clusters, and consequently, reduced signal upon Lightning Terminator incorporation.&lt;/p&gt;
+&lt;h2 id=&#34;revision-history&#34;&gt;Revision history&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Document&lt;/th&gt;
+&lt;th&gt;Version number&lt;/th&gt;
+&lt;th&gt;Date&lt;/th&gt;
+&lt;th&gt;Description of change&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Library preparation: synthetic library&lt;/td&gt;
+&lt;td&gt;v1.0&lt;/td&gt;
+&lt;td&gt;12/2023&lt;/td&gt;
+&lt;td&gt;Original document -KF&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;materials-and-equipment&#34;&gt;Materials and equipment&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Item&lt;/th&gt;
+&lt;th&gt;Vendor&lt;/th&gt;
+&lt;th&gt;Catalog number/link&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Synthetic library molecule: /5Phos/AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT&lt;insert&gt;ATCTCGTATGCCGTCTTCTGCTTG&lt;/td&gt;
+&lt;td&gt;IDT&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;notes-before-starting&#34;&gt;Notes before starting&lt;/h2&gt;
+&lt;p&gt;Consider insert length when designing synthetic library molecules as longer inserts will compromise sequencing quality (lower signal per cluster). We have achieved good results with 16 nt inserts.&lt;/p&gt;
+&lt;p&gt;CircLigase efficiency decreases with templates greater than 100 nt. We have achieved good results with templates from 85 to about 300 nt.&lt;/p&gt;
+&lt;p&gt;Exonuclease treated CircLigase products are cleaned up using Ampure XP beads. Alternative purification methods suitable for single stranded circular DNA can be substituted.&lt;/p&gt;
+&lt;h2 id=&#34;procedure&#34;&gt;Procedure&lt;/h2&gt;
+&lt;h3 id=&#34;1-prepare-materials&#34;&gt;1. Prepare materials&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Resuspend or dilute synthetic templates to 100 µM in nuclease free H₂O
+&lt;ul&gt;
+&lt;li&gt;Optional: prepare aliquots to minimize freeze-thaw cycles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Optional: Pool synthetic templates to reduce number of circularization reactions
+&lt;ul&gt;
+&lt;li&gt;Combine equal volumes of each 100 µM template (minimum of 4 µL required per reaction for next steps)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;2-circularization-of-synthetic-templates&#34;&gt;2. Circularization of synthetic templates&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Prepare one new, clean PCR tube per circularization reaction
+&lt;ul&gt;
+&lt;li&gt;One reaction should produce ample material for hundreds of sequencing reactions&lt;/li&gt;
+&lt;li&gt;Templates can be pooled or circularized individually&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Load the following program on a thermocycler:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Temperature&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;60 ºC&lt;/td&gt;
+&lt;td&gt;16 hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;80 ºC&lt;/td&gt;
+&lt;td&gt;10 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare CircLigase Reaction Mix by combining the following components in order on ice using the tubes prepared in step 2.1:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Reagent&lt;/th&gt;
+&lt;th&gt;Volume for 1 reaction&lt;/th&gt;
+&lt;th&gt;Final concentration&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Nuclease free water&lt;/td&gt;
+&lt;td&gt;13 µL&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Circligase buffer, 10x&lt;/td&gt;
+&lt;td&gt;2 µL&lt;/td&gt;
+&lt;td&gt;1x&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;MnCl₂, 50 mM&lt;/td&gt;
+&lt;td&gt;1 µL&lt;/td&gt;
+&lt;td&gt;2.5 mM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ATP, 1 mM&lt;/td&gt;
+&lt;td&gt;1 µL&lt;/td&gt;
+&lt;td&gt;50 µM&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Synthetic template(s), 100 µM &lt;strong&gt;total&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;2 µL&lt;/td&gt;
+&lt;td&gt;10 µM &lt;strong&gt;total&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;CircLigase I&lt;/td&gt;
+&lt;td&gt;1 µL&lt;/td&gt;
+&lt;td&gt;5 U/µL&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Total volume&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;20 µL&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vortex and spin down reaction mix&lt;/li&gt;
+&lt;li&gt;Load tubes onto thermocycler and run the program loaded in step 2.2&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;3-exonuclease-cleanup&#34;&gt;3. Exonuclease cleanup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Optional: Prepare linear controls with and without exonuclease treatment:
+&lt;ol&gt;
+&lt;li&gt;Transfer 18 µL of 1x CutSmart buffer or 1x CircLigase buffer into two tubes, one labeled -exo and one labeled +exo&lt;/li&gt;
+&lt;li&gt;Add 2 µL of the 100 µM linear synthetic templates used in circularization reaction to each of the two tubes&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare exonuclease mixture:
+&lt;ol&gt;
+&lt;li&gt;Combine 1 µL Exonuclease I and 1 µL Exonuclease III in a tube per reaction on ice
+&lt;ul&gt;
+&lt;li&gt;Note: exonuclease III is only needed for templates with secondary structure and/or contaminating double stranded DNA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Vortex and spin down&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Add two µL of exonuclease mixture to each CircLigase reaction and +exo linear control tube on ice. Pipette up and down to rinse tip after dispensing mixture
+&lt;ol&gt;
+&lt;li&gt;Vortex each reaction mix and spin down&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Load the following program on a thermocycler:
+&lt;ul&gt;
+&lt;li&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Temperature&lt;/th&gt;
+&lt;th&gt;Time&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;37 ºC&lt;/td&gt;
+&lt;td&gt;40 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;80 ºC&lt;/td&gt;
+&lt;td&gt;20 minutes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;4 ºC&lt;/td&gt;
+&lt;td&gt;forever&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;4-library-purification-12x-ampure-cleanup&#34;&gt;4. Library purification: 1.2x ampure cleanup&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Prepare materials:
+&lt;ol&gt;
+&lt;li&gt;Allow Ampure XP beads to come to room temperature for 15-30 minutes&lt;/li&gt;
+&lt;li&gt;Prepare a fresh 80% absolute ethanol solution by combining 200 µL molecular biology grade absolute ethanol with 50 µL of nuclease free water per sample&lt;/li&gt;
+&lt;li&gt;Vortex Ampure XP beads aggressively to ensure beads are resuspended in a homogenous solution&lt;/li&gt;
+&lt;li&gt;Label one clean, new PCR tube per sample for the final elution step&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Dispense 26 µL well mixed Ampure XP beads into each sample, pipetting up and down at least ten times to mix beads with sample
+&lt;ul&gt;
+&lt;li&gt;Pipette slowly and carefully, bead mixture is viscous&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Incubate samples with beads on benchtop for 5 minutes&lt;/li&gt;
+&lt;li&gt;After 5 minute incubation, place samples on magnet stand and allow beads to pellet for 5 minutes&lt;/li&gt;
+&lt;li&gt;Using a p-100 or p-200 pipette, remove supernatant from each sample tube while on magnet stand, leaving behind beads pelleted to tube wall&lt;/li&gt;
+&lt;li&gt;Ethanol wash:
+&lt;ol&gt;
+&lt;li&gt;Dispense 100 µL 80% ethanol solution into each sample tube&lt;/li&gt;
+&lt;li&gt;Rotate tube 180º in magnet stand&lt;/li&gt;
+&lt;li&gt;Once beads have pelleted on the tube wall again, carefully remove supernatant&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Repeat ethanol wash (step 4.6) again for a total of two washes&lt;/li&gt;
+&lt;li&gt;Dry beads:
+&lt;ol&gt;
+&lt;li&gt;After removing supernatant from the second wash, spin tubes down and replace on magnet stand with caps open&lt;/li&gt;
+&lt;li&gt;Using a p-10 pipette, remove any excess ethanol solution&lt;/li&gt;
+&lt;li&gt;Leave caps open and allow beads to dry for 3-5 minutes
+&lt;ul&gt;
+&lt;li&gt;Beads are sufficiently dry when pellet goes from a shiny to matte finish. Beads are overly dry if bead pellet begins to crack&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;Elute DNA
+&lt;ol&gt;
+&lt;li&gt;Once beads are dry and any ethanol has evaporated off, dispense 30 µL of nuclease free H₂O or low TE buffer onto bead pellets&lt;/li&gt;
+&lt;li&gt;Vortex each sample to ensure beads are in solution and not stuck to sides of tube&lt;/li&gt;
+&lt;li&gt;Quickly spin down to bring liquid to bottom of tube without pelleting beads&lt;/li&gt;
+&lt;li&gt;Incubate samples on benchtop (not magent) for 2 minutes&lt;/li&gt;
+&lt;li&gt;Replace samples on magnet and allow beads to pellet for 2 minutes&lt;/li&gt;
+&lt;li&gt;Carefully transfer supernatant containing DNA into the new, clean tubes prepared in step 4.1.4.&lt;/li&gt;
+&lt;li&gt;Beads can be discarded&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;5-library-quantitation-and-quality-check&#34;&gt;5. Library quantitation and quality check&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;Determine library concentration in ng/µL
+&lt;ul&gt;
+&lt;li&gt;Libraries can be quantitated using fluorometric (Qubit ssDNA kit or other similar) or A260 (Nanodrop or similar)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Using library concentration and known size of synthetic templates, determine molarity (nM)
+&lt;ul&gt;
+&lt;li&gt;The +exo control tube should not have any DNA&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;6-libraries-can-be-aliquoted-and-stored-at--20º-c&#34;&gt;6. Libraries can be aliquoted and stored at -20º C&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Libraries can be diluted to 1 nM before aliquoting for long term storage&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
